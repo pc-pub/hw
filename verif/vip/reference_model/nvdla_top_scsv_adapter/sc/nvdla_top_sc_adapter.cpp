@@ -25,6 +25,7 @@ nvdla_top_sc_adapter::nvdla_top_sc_adapter(sc_module_name name):sc_module(name)
   }
 
 
+#ifndef __EDG__
   //////////////////////////////////////////////////////////////////////
   //  Instantiate nvdla converters
   //////////////////////////////////////////////////////////////////////
@@ -116,4 +117,5 @@ nvdla_top_sc_adapter::nvdla_top_sc_adapter(sc_module_name name):sc_module(name)
   //Connect scalar nvdla_intr
   nvdla_top_sc_inst->nvdla_intr(nvdla_top_sc_layer_inst->nvdla_top_sc2sv_nvdla_intr);
   nvdla_top_sc_layer_inst->nvdla_top_sc2sv_nvdla_intr(nvdla_top_sc2sv_nvdla_intr);
+#endif
 };
