@@ -285,7 +285,7 @@ class uvmc_converter<tlm_generic_payload> {
   */
 };
 
-template class uvmc_converter<tlm_generic_payload>;
+class uvmc_converter<tlm_generic_payload>;
 
 
 //------------------------------------------------------------------------------
@@ -363,7 +363,7 @@ class uvmc_print<tlm_generic_payload> {
   }
 };
 
-template class uvmc_print<tlm_generic_payload>;
+class uvmc_print<tlm_generic_payload>;
 
 /*
 //------------------------------------------------------------------------------
